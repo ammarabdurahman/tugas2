@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profil Saya</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="box-profile">
+            <div class="img-profile">
+                    <div class="photo" style="background-image: url('images.png');"></div>
+            </div>
+            <div class="description">
+                <h1 id="pName">Nama Nama</h1>
+                <p id="pRole">Front End Dev</p>
+                <a href="#inputForm" class="button bg-blue" onclick="editForm()">Edit</a>
+
+            </div>
+            <div class="information">
+                <div class="data">
+                    <p class="field">Availability</p>
+                    <p id="pAvailable" class="text-gray">Full Time</p>
+                </div>
+                <div class="data">
+                    <p class="field">Usia</p>
+                    <p id="pAge" class="text-gray">22</p>
+                </div>
+                <div class="data">
+                    <p class="field">Lokasi</p>
+                    <p id="pLocation" class="text-gray">Jakarta</p>
+                </div>
+                <div class="data">
+                    <p class="field">Pengalaman</p>
+                    <p id="pExp" class="text-gray">2</p>
+                </div>
+                <div class="data">
+                    <p class="field">Email</p>
+                    <p id="pEmail" class="text-gray">email@email.com</p>
+                </div>
+            </div>
+        </section>
+        <section id="inputForm">
+                <div class="form">
+                    <label>Nama</label>
+                    <input type="text" name="nama" placeholder="Masukan Nama Anda" id="inpName">
+                </div>
+                <div class="form">
+                    <label>Role</label>
+                    <input type="text" name="role" id="inpRole">
+                </div>
+                <div class="form">
+                    <label>Availability</label>
+                    <input type="text" name="avalability" id="inpAvai">
+                </div>
+                <div class="form">
+                    <label>Usia</label>
+                    <input type="number" name="usia" id="inpUsia">
+                </div>
+                <div class="form">
+                    <label>Lokasi</label>
+                    <input type="text" name="lokasi" id="inpLocation">
+                </div>
+                <div class="form">
+                    <label>Years Experiences</label>
+                    <input type="number" name="pengalaman" id="inpExp">
+                </div >
+                <div class="form">
+                    <label>Email</label>
+                    <input type="email" name="email" id="inpEmail">
+                </div>
+                <div class="form">
+                    <input onclick="simpanForm()" type="submit" onclick="" name="submit" value="SUBMIT" class="bg-green">
+                </div>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
